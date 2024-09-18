@@ -1,0 +1,10 @@
+@use "./mixins";
+
+.layout-vertical-nav .nav-group-arrow {
+  @include mixins.rtl {
+    transform: rotate(180deg);
+  }
+  body.ar {
+  font-family: 'Cairo', sans-serif;
+}
+}

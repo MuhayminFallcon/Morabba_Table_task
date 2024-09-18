@@ -1,0 +1,7 @@
+@use "vuetify/styles" as * with (
+  $body-font-family: "Public Sans",
+);
+
+html[lang="ar"] {
+  font-family: 'Cairo', sans-serif;
+}
