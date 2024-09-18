@@ -8,6 +8,7 @@ const { t } = useI18n();
 
 const logout = () => {
   localStorage.removeItem('auth_token');
+  localStorage.removeItem('email');
   router.push('/login');
 }
 </script>
