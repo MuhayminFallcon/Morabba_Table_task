@@ -1,18 +1,17 @@
-// src/router/authGuard.js
 export function authGuard(to, from, next) {
   const authToken = localStorage.getItem('auth_token');
 
-  if (authToken) {
+  if (!authToken) {
     if (to.path === '/login' || to.path === '/register') {
-      next({ path: '/' }); // Redirect to home if trying to access login or register
+      next({ path: '/' });
     } else {
-      next(); // Allow access to other routes
+      next();
     }
   } else {
     if (to.path === '/login' || to.path === '/register') {
-      next(); // Allow access to login or register
+      next();
     } else {
-      next({ path: '/login' }); // Redirect to login if trying to access other routes
+      next({ path: '/login' });
     }
   }
 }

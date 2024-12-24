@@ -37,9 +37,4 @@ export default [
         to: { name: 'contactus' },
         icon: { icon: 'tabler-phone' },
     },
-    {
-        title: 'test',
-        to: { name: 'test' },
-        icon: { icon: 'tabler-users' },
-    },
 ];
